@@ -18,19 +18,19 @@ const seedDatabase = async () => {
       {
         name: 'Admin User',
         email: 'admin@example.com',
-        password: (process.env.password) ,
+        password:hashedPassword (process.env.password), 
         role: 'Admin'
       },
       {
         name: 'Manager User',
         email: 'manager@example.com',
-        password: (process.env.password),
+        password:hashedPassword (process.env.password),
         role: 'Manager'
       },
       {
         name: 'Technician User',
         email: 'tech@example.com',
-        password: (process.env.password),
+        password: hashedPassword (process.env.password),
         role: 'Technician'
       }
     ];
